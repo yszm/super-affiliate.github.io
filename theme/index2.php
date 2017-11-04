@@ -1,6 +1,6 @@
 <?php
 
-echo " github here :)";
+$github = " github here :)";
 ?>
 
 
