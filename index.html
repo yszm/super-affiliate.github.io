@@ -1,12 +1,12 @@
 start[php]
 	echo 'I am here';
 end[php]
-
 <html dir="ltr" lang="ar" style="
 					
 					background-color: #000;
 					background-image: url(theme/bg.jpg);
 					background-repeat: no-repeat;
+					background-attachment: fixed;
 					background-position: top center;
 					overflow: initial;
 					
@@ -30,6 +30,40 @@ end[php]
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 			
 			<style>
+			
+			@font-face {
+				font-family: 'frutigerltarabic';
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.eot'); /* IE9 Compat Modes */
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.otf') format('opentype'), /* Other browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.woff2') format('woff2'), /* Super Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.woff') format('woff'), /* Pretty Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.ttf')  format('truetype'), /* Safari, Android, iOS */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.svg#svgFontName') format('svg'); /* Legacy iOS */
+			}
+
+			@font-face {
+				font-family: 'gess-light';
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.eot'); /* IE9 Compat Modes */
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.otf') format('opentype'), /* Other browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.woff2') format('woff2'), /* Super Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.woff') format('woff'), /* Pretty Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-text-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+			}
+
+			@font-face {
+				font-family: 'gess-bold';
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.eot'); /* IE9 Compat Modes */
+				src: url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.otf') format('opentype'), /* Other browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.woff2') format('woff2'), /* Super Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.woff') format('woff'), /* Pretty Modern Browsers */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+					url('https://yszm.github.io/super-affiliate.github.io/fonts/ge-ss-two-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+			}
+			
 				*html{
 				
 				height:100%;
@@ -63,6 +97,8 @@ end[php]
 				h1{text-shadow: 0px 0px 15px #bb8534;}
 				h5, h6, h6 span, h5 span{text-shadow: 0px 0px 15px #d6c9b7;}
 				
+				#back{font-family: gess-light;}
+				
 				.content{
 					width:100%;
 					height: 25%;
@@ -82,8 +118,16 @@ end[php]
 					
 					clear: both;
 				}
-				.title h1{margin-top: 0px;}
+				.title h1{
+					font-family: gess-bold;
+					margin-top: 0px;
+				}
+				.title h1 span{
+					font-family: frutigerltarabic;
+					font-size: 30px;
+				}
 				.title h4{
+					font-family: gess-light;
 					text-align: center;
 					float: unset;
 					margin: 45px 0;
@@ -142,6 +186,103 @@ end[php]
 					overflow: hidden;
 				}
 				
+				.pageTemp-item{
+					height: 412px;
+					border-radius: 5px;
+					overflow: hidden;
+					background-repeat: no-repeat;
+					background-position: top center;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+					padding: 1px;
+					margin-bottom: 20px;
+				}
+				
+				.pageTemp-item button h5{font-size: 30px;}
+				
+				.pageTemp-item button{
+					width: 100%;
+					height: 410px;
+					color: #fff0;
+					background: unset;
+					border-radius: 0;
+					border: 0;
+					margin-bottom: 5px;
+				}
+				
+				.pageTemp-item button:hover{
+						color: #fff;
+					    background-color: rgba(0, 0, 0, 0.8);
+						animation: backGround 0.4s;
+						border-radius: 5px;
+				}
+				
+				
+				.pageTemp-admin{
+					width: 100%;
+					height: 410px;
+					color: #fff0;
+					background: rgba(0, 0, 0, 0.9);
+					border-radius: 5px;
+					border: 0;
+					padding: 10px 10px 0px 10px;
+					overflow: hidden;
+				}
+				
+				.pageTemp-admin input{
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				
+				.pageTemp-admin button{
+					width: 200px;
+					height: unset;
+					color: #fff;
+					background-color: #5cb85c;
+					border-color: #4cae4c;
+					border: 1px;
+					border-radius: 4px;
+				}
+				.pageTemp-admin button:hover{
+					animation: unset;
+					background-color: #449d44;
+					border-color: #398439;
+				}
+				
+				.close, .close:hover{
+					width: 100%;
+					font-size: 25px;
+					color: #fff;
+					text-align: right;
+					text-shadow: 0 0px 44px #fff;
+					font-weight: unset;
+					opacity: 1;
+					margin-bottom: 30px;
+				}
+				
+				.pageTemp-admin p{
+					width: 100%;
+					font-size: 25px;
+					font-family: gess-light;
+					color: #fff;
+					clear: both;
+					margin-bottom: 50px;
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				.pageTemp-footer{
 					text-align: center;
 					padding: 15px 0;
@@ -153,13 +294,15 @@ end[php]
 					width:65;
 				}
 				
+
 				
 				
 				
 				
-				
-				
-				
+				@keyframes backGround{
+					from{background-color:  rgba(0, 0, 0, 0.0);}
+					to{background-color:  rgba(0, 0, 0, 0.8);}
+				}
 				
 				@keyframes fadeIn{
 					from{opacity:0;}
@@ -224,8 +367,19 @@ end[php]
 					$(".souqTemp").css("animation","fadeOut 0.5s"),
 					$(".jumiaTemp").css("opacity","0"),
 					$(".souqTemp").css("opacity","0"),
+
 					setTimeout(function() {
-						$(".souqTemp").css("display","none")
+					$(".pageTemp-button").css("opacity","1"),
+					$(".pageTemp-button").css("display","block"),
+					$(".pageTemp-item").css("height","412px"),
+					
+					$(".pageTemp-item").css("padding","1px"),
+					$(".pageTemp-item").css("margin-bottom","20px"),
+					$(".pageTemp-item button").css("margin-bottom","5px"),
+					
+					
+					
+						$(".souqTemp").css("display","none"),
 						$(".jumiaTemp").css("display","none")
 						$(".affiliate").css("display","block"),
 						$(".affiliate").css("-webkit-animation","fadeIn 0.5s"),
@@ -235,6 +389,18 @@ end[php]
 						$(".affiliate").css("animation","fadeIn 0.5s"),
 						$(".affiliate").css("opacity","1"),
 						$(".content").css("padding-top","10%")
+					;}, 250)
+				;}
+				
+				function clickClose() {
+					setTimeout(function(){
+						$(".pageTemp-button").css("opacity","1"),
+						$(".pageTemp-button").css("display","block"),
+						$(".pageTemp-item").css("height","412px"),
+						
+						$(".pageTemp-item").css("padding","1px"),
+						$(".pageTemp-item").css("margin-bottom","20px"),
+						$(".pageTemp-item button").css("margin-bottom","5px")
 					;}, 250)
 				;}
 				
@@ -257,7 +423,59 @@ end[php]
 						$(".content").css("padding-top","10px")
 					;}, 250)
 				;}
+				
+				function clickTemp1() {
+					$(".pageTemp-item").css("height","0px"),
+					$(".pageTemp-item1").css("height","412px"),
+					$(".pageTemp-item").css("padding","0px"),
+					$(".pageTemp-item1").css("padding","1px"),
+					$(".pageTemp-item").css("margin-bottom","0px"),
+					$(".pageTemp-item button").css("margin-bottom","0px"),
 					
+					$(".pageTemp-button").css("-webkit-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-moz-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-ms-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-o-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("opacity","0"),
+					setTimeout(function() {
+						$(".pageTemp-button").css("display","none")
+						$(".pageTemp-temp").css("display","block"),
+						$(".pageTemp-temp").css("-webkit-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-moz-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-ms-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-o-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("opacity","1")
+					;}, 250)
+				;}
+				
+				function clickTemp2() {
+					$(".pageTemp-item").css("height","0px"),
+					$(".pageTemp-item2").css("height","412px"),
+					$(".pageTemp-item").css("padding","0px"),
+					$(".pageTemp-item2").css("padding","1px"),
+					$(".pageTemp-item").css("margin-bottom","0px"),
+					$(".pageTemp-item button").css("margin-bottom","0px"),
+					
+					$(".pageTemp-button").css("-webkit-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-moz-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-ms-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("-o-animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("animation","fadeOut 0.5s"),
+					$(".pageTemp-button").css("opacity","0"),
+					setTimeout(function() {
+						$(".pageTemp-button").css("display","none")
+						$(".pageTemp-temp").css("display","block"),
+						$(".pageTemp-temp").css("-webkit-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-moz-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-ms-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("-o-animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("animation","fadeIn 0.5s"),
+						$(".pageTemp-temp").css("opacity","1")
+					;}, 250)
+				;}
+				
 			</script>
 
 <script type="text/javascript"> 
@@ -344,13 +562,12 @@ end[php]
 				<h1>Super Affiliate</h1>
 				<h6><span class="label label-Default">V 1.0</span>More flexible for your business.</h6>
 			</div>
-				
+		
 			<div class="content">
-				
 				<div class="container affiliate" id="primary" dir="rtl">
 					<div class="title col-lg-6 col-md-8 col-sm-9 col-xs-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
 						<h1>أهلا بك،</h1>
-						<h1>أنت على وشك الشروع في تجربة جديدة لنجاح عملك في مجال التسويق بالعموله.</h1>
+						<h1><span>أنت على وشك الشروع في تجربة جديدة لنجاح عملك في مجال التسويق بالعموله.</span></h1>
 					</div>
 					
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -381,14 +598,16 @@ end[php]
 				
 				
 				
-				<div class="container container">
+				<div class="container">
 					<div class="col-lg-8 col-md-9 col-lg-offset-2 col-md-offset-1">
 					
 					
 						<div class="souqTemp" id="primary" dir="rtl">
 							<div class="pageTemp row">
 								<div class="pageTemp-title">
-									<div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 pull-right"><img src="theme/souq.png"></div>
+									<div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 pull-right">
+										<img src="theme/souq.png">
+									</div>
 									
 									<div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 pull-right">
 										<h2>test content</h2>
@@ -397,7 +616,34 @@ end[php]
 								
 								<div class="pageTemp-body">
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<img src="theme/souq.png">
+									<!--unit of template-->
+										<div class="pageTemp-item pageTemp-item1" style="background-image: url(theme/souq.jpg);">
+											<div class="pageTemp-button">
+												<button type="button" onclick='clickTemp1()' class="btn btn-primary back pull-left">
+													<h5>
+														<span id='back'>اختيار التصميم</span>
+													</h5>
+												</button>
+											</div>
+											<div class="pageTemp-admin pageTemp-temp">
+												<div class="close">
+													<i class="fa fa-times-circle-o" aria-hidden="true" onclick='clickClose()'></i>
+												</div>
+												<p>خطوه واحده لتأمين صفحتك الاعلانيه</p>
+												<form method="POST" action="">
+													<input type="hidden" name="a" value="1"><!--action type-->
+													<input type="hidden" name="c" value="1"><!--affiliate company id-->
+													<input type="hidden" name="t" value="1"><!--template id-->
+													<input type="text" class="form-control" name="u" value="" placeholder="Username" aria-describedby="sizing-addon1"><!--username field-->
+													<input type="text" class="form-control" name="p" value="" placeholder="Pssowrd" aria-describedby="sizing-addon1"><!--password field-->
+													<button type="submit" class="btn btn-default">تأمين الصفحه</button><!---->
+												</form>
+											</div>
+										</div>
+									<!--end unit of template-->
+										
+										
+										
 									</div>
 								</div>
 								
@@ -405,7 +651,7 @@ end[php]
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<button type="button" onclick='clickBack()' class="btn btn-primary back pull-left">
 											<h5>
-												رجوع الي شبكات التسويق
+												<span id='back'>الرجوع الي شبكات التسويق</span>
 												<i class="fa fa-chevron-left" aria-hidden="true"></i>
 											</h5>
 										</button>
@@ -417,7 +663,9 @@ end[php]
 						
 						
 						<div class="jumiaTemp" id="primary" dir="rtl">
+						
 							<div class="pageTemp row">
+							
 								<div class="pageTemp-title">
 									<div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 pull-right">
 											<img src="theme/jumia.png">
@@ -430,7 +678,39 @@ end[php]
 								
 								<div class="pageTemp-body">
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										test content.
+									<!--unit of template-->
+										<div class="pageTemp-item pageTemp-item1" style="background-image: url(theme/jumia.jpg);">
+											<div class="pageTemp-button">
+												<button type="button" onclick='clickTemp1()' class="btn btn-primary back pull-left">
+													<h5>
+														<span id='back'>اختيار التصميم</span>
+													</h5>
+												</button>
+											</div>
+											<div class="pageTemp-admin pageTemp-temp">
+												<div class="close">
+													<i class="fa fa-times-circle-o" aria-hidden="true" onclick='clickClose()'></i>
+												</div>
+												<p>خطوه واحده لتأمين صفحتك الاعلانيه</p>
+												<form method="POST" action="">
+													<input type="hidden" name="a" value="1"><!--action type-->
+													<input type="hidden" name="c" value="2"><!--affiliate company id-->
+													<input type="hidden" name="t" value="1"><!--template id-->
+													<input type="text" class="form-control" name="u" value="" placeholder="Username" aria-describedby="sizing-addon1"><!--username field-->
+													<input type="text" class="form-control" name="p" value="" placeholder="Pssowrd" aria-describedby="sizing-addon1"><!--password field-->
+													<button type="submit" class="btn btn-default">تأمين الصفحه</button><!---->
+												</form>
+											</div>
+										</div>
+									<!--end unit of template-->
+
+
+
+
+
+
+
+
 									</div>
 								</div>
 								
@@ -438,13 +718,15 @@ end[php]
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 										<button type="button" onclick='clickBack()' class="btn btn-primary back pull-left">
 											<h5>
-												رجوع الي شبكات التسويق
+												<span id='back'>الرجوع الي شبكات التسويق</span>
 												<i class="fa fa-chevron-left" aria-hidden="true"></i>
 											</h5>
 										</button>
 									</div>
 								</div>
+								
 							</div>
+							
 						</div>
 						
 						
@@ -459,23 +741,27 @@ end[php]
 
 
 				
-			</div>
 			
-			<div class="container loading-line">
-				<div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
-					<div class="progress" id="secondary" >
-					  <div class="progress-bar progress-bar-striped active loading" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" >
-						<span id="span"></span> Complete
-					  </div>
+			
+				<div class="container loading-line">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+						<div class="progress" id="secondary" >
+						  <div class="progress-bar progress-bar-striped active loading" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" >
+							<span id="span"></span> Complete
+						  </div>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h5>made from a lot of<i class="fa fa-heart" aria-hidden="true"></i>to give you More flexible for your business.</h5>
-				<h5>created by<a href="https://fb.com/yszm.zeidan"><span class="label label-primary">YSZM Zeidan.</span></a></h5>
-			</div>
 				
+				<div class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5>made from a lot of<i class="fa fa-heart" aria-hidden="true"></i>to give you More flexible for your business.</h5>
+					<h5>created by<a href="https://fb.com/yszm.zeidan"><span class="label label-primary">YSZM Zeidan.</span></a></h5>
+				</div>
+				
+			</div>	
+		
+
+		
 			
 			
 			
