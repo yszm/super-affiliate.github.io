@@ -1,1 +1,278 @@
-test souq in github.
+start[php]
+	$GLOBALS["tn"]=1509844577;
+	function sA($v){return ($v=='t'?'Super Affiliate':($v=='v'?'V 1.0':($v=='d'?'More flexible for your business.':'')));}
+	
+	$admin = 0;
+	
+	$google_analytics = '99999999999';
+	
+	$title = 'SOUQ';
+	
+	function  f11(){
+		
+	}
+	
+
+
+
+	
+	function f10($v){return ($v=='egypt'?'1':($v=='saudi'?'2':($v=='emirates'?'3':'')));}
+	echo f10($_POST['souq']);
+	
+	
+end[php]
+
+<html dir="ltr" lang="ar" style="">
+		<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-@[googleUA]"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-start[php] echo $google_analytics;end[php]');
+			</script>
+			
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<style>
+			
+				body{background-color: #fce9d8;}
+				
+				.in{ margin-top: 5%;}
+				.in h1 {font-weight: 700; text-align: left; margin: 0px;}
+				.in h6 {font-weight: 700; text-align: left;}
+				.in h6 span{ margin-right: 8px;}
+				.in h5 { margin: 15px; font-weight: 700;}
+				.in h5 span{ margin: 0 8px;}
+				.in h5 i{ margin: 0 8px;}
+				.in i{ margin: 15px 10px; font-size: 30px;}
+				.in a:hover{color: #fff; text-decoration: none;}
+				.in h1{text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.50);}
+				.in h5, h6, .in h6 span, .in h5 span{text-shadow: 0px 0px 15px #d6c9b7;}
+				
+				.jumiaTemp, .souqTemp{
+					text-align:center;
+				}
+				
+				.pageTemp{
+					text-align: center;
+					box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
+					border-radius: 10px;
+					background: rgba(0, 0, 0, 0.75);
+					overflow: hidden;
+					opacity:1;
+					display:block;
+				}
+				
+				.pageTemp .back{
+					padding-top: 0px;
+					padding-bottom: 0px;
+				}
+				
+				.pageTemp-title{
+					text-align: center;
+					padding: 10px 0;
+					/*border-bottom: 1px solid rgba(33, 32, 32, 0.5);*/
+					/*box-shadow: 0px 0px 100px rgb(89, 94, 99);*/
+					overflow: hidden;
+				}
+				
+				.pageTemp-body{
+					text-align: center;
+					padding: 25px 0;
+					box-shadow: 0px 0px 100px rgb(89, 94, 99);
+					overflow: hidden;
+				}
+				
+				.pageTemp-footer{
+					text-align: center;
+					overflow: hidden;
+				}
+				
+				
+				.pageTemp-title img{
+					width:65;
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				img{width: 100%;}
+				h3,h5{
+					text-align: center;
+					margin: 25px 0;
+				}
+				.main-img{
+					overflow: hidden;
+					margin-top: 10%;
+				}
+				.main-flag{
+					text-align: center;
+					overflow: hidden;
+					
+				}
+				.main-flag img{
+					width: 120px;
+					height: 70px;
+					overflow: hidden;
+					border-radius: 5px;
+					margin: 10px;
+					box-shadow: 0px 0px 15px #000;
+				}
+				
+				#souq-egypt , #souq-saudi , #souq-emirates {
+					width: 130px;
+					height: 88px;
+					background-color: #000;
+					background-repeat: no-repeat;
+					background-position: top center;
+					background-size: cover;
+					overflow: initial;
+					border-radius: 10px;
+					border: 0;
+					box-shadow: 0px 0px 15px #000;
+					margin: 15px;
+				}
+				
+				#souq-egypt		{	background-image: url(theme/eg.png);}
+				#souq-saudi		{	background-image: url(theme/sa.png);}
+				#souq-emirates	{	background-image: url(theme/ae.png);}
+				
+				@media (min-width: 992px){
+					/*form{width: 100%;}*/
+				}
+				
+			</style>
+			
+			<script type="text/javascript">
+				
+			</script>
+			
+			<title>start[php] echo $title;end[php]</title>
+		</head>
+		<body>
+		start[php] if($admin):end[php]
+			<div class="container in">
+			<style>
+			body{background-color: #fefefe; color: #fff;}
+			</style>
+			
+			
+			
+				<div class="col-lg-8 col-md-9 col-lg-offset-2 col-md-offset-1">
+				
+				
+					<div class="souqTemp" id="primary" dir="rtl">
+						<div class="pageTemp row">
+							<div class="pageTemp-title">
+								<div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 pull-right"><img src="theme/souq.png"></div>
+								
+								<div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 pull-right" dir="ltr">
+									<h1>start[php] echo sA('t');end[php]</h1>
+									<h6><span class="label label-Default">start[php] echo sA('v');end[php]</span>start[php] echo sA('d');end[php]</h6>
+								</div>
+							</div>
+							
+							<form action="" method="post"style="margin: 0px;">
+								<div class="pageTemp-body">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" dir="ltr">
+										
+										
+										
+										<div class="input-group"style="display: unset;">
+										  <input type="text" class="form-control" placeholder="اسم الموقع" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px; text-align: right;">
+										</div>
+										
+										<div class="input-group"style="display: unset;">
+										  <input type="text" class="form-control" placeholder="UA-xxx xxx xxx for Google Analytics" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										</div>
+										
+										<div class="input-group"style="display: unset;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for Egypt" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										</div>
+										
+										<div class="input-group"style="display: unset;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for saudi" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										</div>
+										
+										<div class="input-group"style="display: unset;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for emirates" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										</div>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									</div>
+								</div>
+								
+								<div class="pageTemp-footer">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+										<input type="hidden" name="souq" value="saudi">
+										<button type="submit" class="btn btn-primary back pull-left">
+											<i class="fa fa-floppy-o" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				
+			</div>
+		start[php] else:end[php]
+			<div class="container">
+				<div class="main-img col-lg-8 col-md-9 col-lg-offset-2 col-md-offset-1">
+					<img src="theme/souq-offer.png">
+					<h3>Choose your country | اختر بلدك</h3>
+					<div class="main-flag col-lg-12" dir="ltr">
+					
+						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+							<input type="hidden" name="souq" value="egypt">
+							<button id="souq-egypt"></button>
+						</form>
+
+						
+						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+							<input type="hidden" name="souq" value="saudi">
+							<button id="souq-saudi"></button>
+						</form>
+						
+						
+						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+							<input type="hidden" name="souq" value="emirates">
+							<button id="souq-emirates"></button>
+						</form>
+
+					</div>
+					<h5>All Rights Reserved © 2017.</h5>
+				</div>
+			</div>
+		start[php] endif;end[php]
+			
+			
+			
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</body>
+	</html>
