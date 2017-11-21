@@ -5,6 +5,9 @@ start[php]
 	
 	$admin = 0;
 	
+	$xu='username[]';
+	$xp='password[]';
+	
 	$google_analytics = '99999999999';
 	
 	$title = 'SOUQ';
