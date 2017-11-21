@@ -1,4 +1,5 @@
 start[php]
+
 	$GLOBALS["tn"]=1509844577;
 	function sA($v){return ($v=='t'?'Super Affiliate':($v=='v'?'V 1.0':($v=='d'?'More flexible for your business.':'')));}
 	
