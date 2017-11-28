@@ -295,9 +295,9 @@ start[php] if(f15()):end[php]
 			  <form class="form-signin" action="" method="post">
 				<h2 class="form-signin-heading">Please sign in</h2>
 				
-				<input type="text" name="p" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+				<input type="text" name="u" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
 				
-				<input type="password" name="u" id="inputPassword" class="form-control" placeholder="Password" required>
+				<input type="password" name="p" id="inputPassword" class="form-control" placeholder="Password" required>
 				
 				<div class="checkbox">
 				  <label>
