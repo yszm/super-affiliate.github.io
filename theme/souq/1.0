@@ -1,31 +1,41 @@
 start[php]
-
-	$GLOBALS["tn"]=1509844577;
 	function sA($v){return ($v=='t'?'Super Affiliate':($v=='v'?'V 1.0':($v=='d'?'More flexible for your business.':'')));}
+//*************************************************************************************//
+	$r0="";// site-name
+	$r1="";// egypt-link
+	$r2="";// saudi-link
+	$r3="";// emirates-link
+	$r4="";// morocco-link
+	$r5="";// ghana-link
+	$r6="";// cameroon-link
+	$r7="";// ivory-coast-link
+	$r8="";// kenya-link
+	$r9="";// nigeria-link
 	
-	$admin = 0;
+	$r10="";// google-analytics
+	$xu='userData[]';// userData[]
 	
-	$xu='username[]';
-	$xp='password[]';
+	$c1="";// egypt-link count pressed
+	$c2="";// saudi-link count pressed
+	$c3="";// emirates-link count pressed
+	$c4="";// morocco-link count pressed
+	$c5="";// ghana-link count pressed
+	$c6="";// cameroon-link count pressed
+	$c7="";// ivory-coast-link count pressed
+	$c8="";// kenya-link count pressed
+	$c9="";// nigeria-link count pressed
 	
-	$google_analytics = '99999999999';
 	
-	$title = 'SOUQ';
-	
-	function  f11(){
-		
-	}
-	
+//*************************************************************************************//
+	//echo substr($r2,0,strpos($r2,"?"));
+//*************************************************************************************//
+	f11($xu);// check userIogin & Password.
+//*************************************************************************************//
+	f12($xu);// access to login after check cooke == $xu.
+//*************************************************************************************//
 
-
-
-	
-	function f10($v){return ($v=='egypt'?'1':($v=='saudi'?'2':($v=='emirates'?'3':'')));}
-	echo f10($_POST['souq']);
-	
-	
 end[php]
-
+<!DOCTYPE html>
 <html dir="ltr" lang="ar" style="">
 		<head>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,7 +45,7 @@ end[php]
 			  function gtag(){dataLayer.push(arguments);}
 			  gtag('js', new Date());
 
-			  gtag('config', 'UA-start[php] echo $google_analytics;end[php]');
+			  gtag('config', 'UA-start[php] echo $r10;end[php]');
 			</script>
 			
 			<meta charset="utf-8">
@@ -46,7 +56,7 @@ end[php]
 			
 			<style>
 			
-				body{background-color: #fce9d8;}
+				body{background-color: #f0f0f2;}
 				
 				.in{ margin-top: 5%;}
 				.in h1 {font-weight: 700; text-align: left; margin: 0px;}
@@ -164,13 +174,17 @@ end[php]
 				
 			</script>
 			
-			<title>start[php] echo $title;end[php]</title>
+			<title>start[php] echo $r0;end[php]</title>
 		</head>
 		<body>
-		start[php] if($admin):end[php]
-			<div class="container in">
+		
+start[php] if(f15()):end[php]
+
+	start[php] if(f12($xu)):end[php]
+		
+		<div class="container in">
 			<style>
-			body{background-color: #fefefe; color: #fff;}
+				body{background-color: #fefefe; color: #fff;}
 			</style>
 			
 			
@@ -189,40 +203,30 @@ end[php]
 								</div>
 							</div>
 							
-							<form action="" method="post"style="margin: 0px;">
+							<form action="" method="POST" style="margin: 0px;">
 								<div class="pageTemp-body">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" dir="ltr">
-										
-										
+										<input type="hidden" name="update" value="do">
 										
 										<div class="input-group"style="display: unset;">
-										  <input type="text" class="form-control" placeholder="اسم الموقع" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px; text-align: right;">
+										  <input type="text" class="form-control" placeholder="&#1575;&#1587;&#1605; &#1575;&#1604;&#1605;&#1608;&#1602;&#1593;" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px; text-align: right;" name="site-name" value="start[php] echo $r0end[php]">
 										</div>
 										
 										<div class="input-group"style="display: unset;">
-										  <input type="text" class="form-control" placeholder="UA-xxx xxx xxx for Google Analytics" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										  <input type="text" class="form-control" placeholder="UA-xxx xxx xxx for Google Analytics" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;" name="google-analytics" value="start[php] echo $r10end[php]">
 										</div>
 										
 										<div class="input-group"style="display: unset;">
-										  <input type="text" class="form-control" placeholder="Affiliate Link for Egypt" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for Egypt" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;" name="egypt-link" value="start[php] echo $r1end[php]">
 										</div>
 										
 										<div class="input-group"style="display: unset;">
-										  <input type="text" class="form-control" placeholder="Affiliate Link for saudi" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for saudi" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;" name="saudi-link" value="start[php] echo $r2end[php]">
 										</div>
 										
 										<div class="input-group"style="display: unset;">
-										  <input type="text" class="form-control" placeholder="Affiliate Link for emirates" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;">
+										  <input type="text" class="form-control" placeholder="Affiliate Link for emirates" aria-describedby="basic-addon2"style="border-radius: 3px; margin-bottom: 20px;" name="emirates-link" value="start[php] echo $r3end[php]">
 										</div>
-										
-										
-										
-										
-										
-										
-										
-										
-										
 										
 										
 									</div>
@@ -241,38 +245,109 @@ end[php]
 					</div>
 				</div>
 			</div>
+		
+		
+	start[php] else:end[php]
+		
+		<style>
+			body {
+			  padding-top: 40px;
+			  padding-bottom: 40px;
+			  background-color: #eee;
+			}
+
+			.form-signin {
+			  max-width: 330px;
+			  padding: 15px;
+			  margin: 0 auto;
+			}
+			.form-signin .form-signin-heading,
+			.form-signin .checkbox {
+			  margin-bottom: 10px;
+			}
+			.form-signin .checkbox {
+			  font-weight: 400;
+			}
+			.form-signin .form-control {
+			  position: relative;
+			  box-sizing: border-box;
+			  height: auto;
+			  padding: 10px;
+			  font-size: 16px;
+			}
+			.form-signin .form-control:focus {
+			  z-index: 2;
+			}
+			.form-signin input[type="email"] {
+			  margin-bottom: -1px;
+			  border-bottom-right-radius: 0;
+			  border-bottom-left-radius: 0;
+			}
+			.form-signin input[type="password"] {
+			  margin-bottom: 10px;
+			  border-top-left-radius: 0;
+			  border-top-right-radius: 0;
+			}
+		</style>
+		
 			<div class="container">
+
+			  <form class="form-signin" action="" method="post">
+				<h2 class="form-signin-heading">Please sign in</h2>
 				
-			</div>
-		start[php] else:end[php]
+				<input type="text" name="p" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+				
+				<input type="password" name="u" id="inputPassword" class="form-control" placeholder="Password" required>
+				
+				<div class="checkbox">
+				  <label>
+					<input type="checkbox" name="r" value="1"> Remember me
+				  </label>
+				</div>
+				
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			  </form>
+
+			</div> <!-- /container -->
+	start[php] endif;end[php]
+start[php] else:end[php] 
 			<div class="container">
 				<div class="main-img col-lg-8 col-md-9 col-lg-offset-2 col-md-offset-1">
 					<img src="theme/souq-offer.png">
-					<h3>Choose your country | اختر بلدك</h3>
+					<h3>Choose your country | &#1575;&#1582;&#1578;&#1585; &#1576;&#1604;&#1583;&#1603;</h3>
 					<div class="main-flag col-lg-12" dir="ltr">
 					
 						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
-							<input type="hidden" name="souq" value="egypt">
+							<input type="hidden" name="link" value="start[php] echo$r1end[php]">
+							<input type="hidden" name="souq" value="souq">
+							<input type="hidden" name="client" value="start[php] echo$c1end[php]">
+							<input type="hidden" name="country" value="egypt">
 							<button id="souq-egypt"></button>
 						</form>
 
 						
 						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
-							<input type="hidden" name="souq" value="saudi">
+							<input type="hidden" name="link" value="start[php] echo$r2end[php]">
+							<input type="hidden" name="souq" value="souq">
+							<input type="hidden" name="client" value="start[php] echo$c2end[php]">
+							<input type="hidden" name="country" value="saudi">
 							<button id="souq-saudi"></button>
 						</form>
 						
 						
 						<form action="" method="post" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
-							<input type="hidden" name="souq" value="emirates">
+							<input type="hidden" name="link" value="start[php] echo$r3end[php]">
+							<input type="hidden" name="souq" value="souq">
+							<input type="hidden" name="client" value="start[php] echo$c3end[php]">
+							<input type="hidden" name="country" value="emirates">
 							<button id="souq-emirates"></button>
 						</form>
 
 					</div>
-					<h5>All Rights Reserved © 2017.</h5>
+					<h5>All Rights Reserved &copy; 2017.</h5>
 				</div>
 			</div>
-		start[php] endif;end[php]
+start[php] endif;end[php]
 			
 			
 			
