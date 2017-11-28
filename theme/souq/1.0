@@ -15,15 +15,15 @@ start[php]
 	$r10="";// google-analytics
 	$xu="userData[]";// userData[]
 	
-	$c1="";// egypt-link count pressed
-	$c2="";// saudi-link count pressed
-	$c3="";// emirates-link count pressed
-	$c4="";// morocco-link count pressed
-	$c5="";// ghana-link count pressed
-	$c6="";// cameroon-link count pressed
-	$c7="";// ivory-coast-link count pressed
-	$c8="";// kenya-link count pressed
-	$c9="";// nigeria-link count pressed
+	$c1="0";// egypt-link count pressed
+	$c2="0";// saudi-link count pressed
+	$c3="0";// emirates-link count pressed
+	$c4="0";// morocco-link count pressed
+	$c5="0";// ghana-link count pressed
+	$c6="0";// cameroon-link count pressed
+	$c7="0";// ivory-coast-link count pressed
+	$c8="0";// kenya-link count pressed
+	$c9="0";// nigeria-link count pressed
 	
 	
 //*************************************************************************************//
