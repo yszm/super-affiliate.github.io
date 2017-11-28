@@ -13,7 +13,7 @@ start[php]
 	$r9="";// nigeria-link
 	
 	$r10="";// google-analytics
-	$xu='userData[]';// userData[]
+	$xu="userData[]";// userData[]
 	
 	$c1="";// egypt-link count pressed
 	$c2="";// saudi-link count pressed
