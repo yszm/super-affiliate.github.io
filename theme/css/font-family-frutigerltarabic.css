@@ -1,0 +1,10 @@
+	@font-face {
+		font-family: 'frutigerltarabic';
+		src: url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.eot'); /* IE9 Compat Modes */
+		src: url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.otf') format('opentype'), /* Other browsers */
+			url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.woff2') format('woff2'), /* Super Modern Browsers */
+			url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.woff') format('woff'), /* Pretty Modern Browsers */
+			url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('https://yszm.github.io/super-affiliate.github.io/fonts/frutigerltarabic-45light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
